@@ -1,5 +1,4 @@
 use crate::schema::{accounts, transactions};
-use bigdecimal::BigDecimal;
 
 #[derive(Queryable)]
 pub struct Account {
@@ -30,5 +29,5 @@ pub struct Transaction {
 pub struct NewTransaction<'a> {
     pub account_name: &'a str,
     pub occurrance: &'a str,
-    pub amount: BigDecimal,
+    pub amount: f32,
 }

@@ -3,7 +3,7 @@ table! {
         id -> Int4,
         account_name -> Varchar,
         account_holder -> Text,
-        balance -> Numeric,
+        balance -> Float,
     }
 }
 
@@ -12,7 +12,7 @@ table! {
         id -> Int4,
         account_name -> Varchar,
         occurrance -> Varchar,
-        amount -> Numeric,
+        amount -> Float,
     }
 }
 
